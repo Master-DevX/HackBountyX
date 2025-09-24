@@ -1,0 +1,185 @@
+@import url(https://fonts.googleapis.com/css2?family=Barlow:wght@100;200;300;400;500;600;800;900&display=swap);
+
+body {
+  font-family: 'Barlow', sans-serif;
+}
+:root {
+  --btn-bg-color: #9EFF00;
+  --transition: all ease 0.3s;
+  --box-shadow: 0 0 15px var(--btn-bg-color);
+} 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.service {
+  width: 90vw;
+  margin: 0 auto;
+}
+.top_container {
+  width: 90vw;
+  height: 30vh;
+  background-image: url(../../assets/TextContainer.png);
+  background-size: cover;
+  background-position: center;
+}
+.top_img_container {
+  background-color: rgba(0, 0, 0, 0.664);
+  width: 100%;
+  color: aliceblue;
+  height: 30vh;
+  gap: 2vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.top_title {
+  font-size: 5vh;
+  font-weight: 600;
+}
+.top_text {
+  font-size: 2.2vh;
+  font-weight: normal;
+}
+/* Asosiy layout */
+.bottom_container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 0; /* cardlar orasida masofa yo‘q */
+  /* margin-top: 5vh; */
+}
+
+.s_card {
+  border: 1px solid #262626;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 2vw;
+  color: #fff;
+  transition: var(--transition);
+  height: auto;
+}
+
+
+.s_card_title {
+  font-weight: 600;
+  margin-top: 2vh;
+  font-size: 3vh;
+}
+.s_card_text {
+  margin-top: 2.5vh;
+  font-size: 2vh;
+  color: #c0c0c0;
+}
+.s_card_btn {
+  width: 100%;
+  background-color: #262626;
+  height: 6vh;
+  margin-top: auto;
+  margin-top: 9vh;
+  border: none;
+  color: #fff;
+  border-radius: 0.6vh;
+  font-size: 2vh;
+  font-weight: 500;
+  transition: var(--transition);
+  cursor: pointer;
+}
+.s_card_btn:hover {
+  background-color: var(--btn-bg-color);
+  color: #000000;
+}
+.card_img_div {
+  width: 8vh;
+  height: 8vh;
+  border-radius: 0.7vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(
+    40deg,
+    rgba(46, 46, 46, 0) 27%,
+    rgba(46, 46, 46, 0.71) 70%,
+    rgba(157, 255, 0, 0.11) 92%
+    );
+  }
+  .card_img_div img {
+    width: 4vh;
+    height: 4vh;
+    transition: 0.3s all ease;
+  }
+  .card_img_div:hover img {
+    transform: scale(1.3);
+  }
+  
+  /* Mobil */
+  /* @media (max-width: 600px) {
+    .service {
+      width: 95vw;
+    }
+    .top_title {
+      font-size: 4vh;
+    }
+    .top_text {
+      font-size: 2vh;
+    }
+    .bottom_container {
+      flex-direction: column;
+      align-items: center;
+      gap: 4vh;
+    }
+    .s_card {
+      width: 90vw;
+      height: auto;
+      padding: 5vw;
+    }
+    .s_card_btn {
+      width: 100%;
+      height: 6.5vh;
+      font-size: 2.2vh;
+    }
+  }
+  
+  /* Planshet */
+/* Planshet (601px - 884px) */
+@media (max-width: 885px) and (min-width: 601px) {
+  .bottom_container {
+    grid-template-columns: repeat(2, 1fr); /* har qatorda 2 ta card */
+    gap: 0; /* cardlar orasida masofa yo‘q */
+  }
+
+  .s_card {
+    width: 100%;       /* card butun ustunni egallasin */
+    border-radius: 0.5vh;
+    margin: 0;
+    padding: 3vw;
+  }
+
+  .s_card_btn {
+    width: 100%;
+    height: 7vh;
+    margin-top: 3vh;
+  }
+}
+
+  
+  /* Mobil */
+  @media (max-width: 600px) {
+    .bottom_container {
+      grid-template-columns: 1fr; /* faqat bitta ustun */
+    }
+  
+    .s_card {
+      width: 100%;        /* butun ekran bo‘ylab */
+      border-radius: 0;   /* yonlari ham yopishib ketsin */
+      margin: 0;          /* tepa-past masofa yo‘q */
+      padding: 5vw;
+    }
+    .s_card_btn{
+      margin-top: 4vh;
+    }
+  }

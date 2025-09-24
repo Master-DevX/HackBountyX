@@ -1,0 +1,13 @@
+@import url(https://fonts.googleapis.com/css2?family=Barlow:wght@100;200;300;400;500;600;800;900&display=swap);
+
+body {
+  font-family: 'Barlow', sans-serif;
+}
+::selection{
+    color: black;
+    background-color: #9dff00;
+}
+.containers{
+    background-color: #1A1A1A;
+    width: 100%;
+}
