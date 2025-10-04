@@ -5,7 +5,7 @@ import Header from './components/header/header'
 import Main from './components/home/home'
 import Service from './components/services/service'
 import Square from './components/square/square'
-import ASection from './components/about_section/a_section'
+import Client from './components/client/client'
 
 function App() {
 
@@ -16,7 +16,7 @@ function App() {
       <Panrtners />
       <Service />
       <Square />
-      <ASection />
+      <Client />
     </div>
   )
 }

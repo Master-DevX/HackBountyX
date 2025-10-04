@@ -1,7 +1,5 @@
 .bottom_containers{
   display: grid;
-  /* flex-wrap: wrap; */
-  /* justify-content: center; */
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 0.8fr);
   width: 90vw;
